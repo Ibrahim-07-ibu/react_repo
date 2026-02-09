@@ -1,0 +1,45 @@
+return (
+  //   <div className="container">
+  //     {/* Card 1 */}
+  //     <div className="cards">
+  //       <img src={img1} alt="shoe" />
+  //       <div className="description">
+  //         <div className="wrap">
+  //           <h3>Sneakers Off-White </h3>
+  //           <h3 className="year">2024</h3>
+  //         </div>
+  //         <button>+</button>
+  //       </div>
+  //       <p className="brand">NIKE</p>
+  //       <p className="price">$38.00</p>
+  //     </div>
+
+  //     {/* Card 2 */}
+  //     <div className="cards">
+  //       <img src={img2} alt="shoe" />
+  //       <div className="description">
+  //         <div className="wrap">
+  //           <h3>Sneakers Off-White </h3>
+  //           <h3 className="year">2024</h3>
+  //         </div>
+  //         <button>+</button>
+  //       </div>
+  //       <p className="brand">NIKE</p>
+  //       <p className="price">$38.00</p>
+  //     </div>
+
+  //     {/* Card 3 */}
+  //     <div className="cards">
+  //       <img src={img3} alt="shoe" />
+  //       <div className="description">
+  //         <div className="wrap">
+  //           <h3>Sneakers Off-White </h3>
+  //           <h3 className="year">2024</h3>
+  //         </div>
+  //         <button>+</button>
+  //       </div>
+  //       <p className="brand">NIKE</p>
+  //       <p className="price">$38.00</p>
+  //     </div>
+  //   </div>
+  // );

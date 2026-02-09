@@ -1,0 +1,17 @@
+To copy a element 
+
+option 1 :
+shallow copy
+can use let and call that element
+
+option 2 :
+shallow copy 
+can just use the variable and assign to a value 
+
+option 3 :
+shallow copy 
+can use .assign
+
+option 4 :
+deep copy 
+can use .parse and .stringify

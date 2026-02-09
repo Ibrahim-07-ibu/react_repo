@@ -1,0 +1,81 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#222;
+  color:white;
+}
+
+.hero{
+  display:flex;
+}
+
+.hero-img{
+  flex:1;
+  background:url("https://picsum.photos/600/500") center/cover;
+  height:500px;
+}
+
+.hero-content{
+  flex:1;
+  padding:60px;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:300px;
+}
+
+.form input{
+  padding:10px;
+}
+
+.form button{
+  padding:10px;
+  background:black;
+  color:white;
+}
+
+.about{
+  padding:60px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.product{
+  display:flex;
+}
+
+.product:nth-child(even){
+  flex-direction:row-reverse;
+}
+
+.product-text{
+  flex:1;
+  background:#222;
+  color:white;
+  padding:60px;
+}
+
+.product-img{
+  flex:1;
+  background:url("https://picsum.photos/600/400") center/cover;
+  height:400px;
+}
+
+.access{
+  display:flex;
+  justify-content:space-between;
+  padding:60px;
+}
