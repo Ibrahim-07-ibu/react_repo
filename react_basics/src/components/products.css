@@ -8,7 +8,7 @@
 .cards {
     width: 300px;
     background-color: #e5e5e5;
-    color:black;
+    color: black;
     border-radius: 12px;
     padding: 25px;
     gap: 10px;
@@ -24,10 +24,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.year{
+
+.year {
     color: black;
     text-align: start;
 }
+
 button {
     border-radius: 50%;
 }
@@ -40,4 +42,13 @@ button {
 .price {
     font-weight: bold;
     text-align: start;
+}
+
+.count {
+    text-align: end;
+}
+
+.price_count {
+    display: flex;
+    justify-content: space-between;
 }

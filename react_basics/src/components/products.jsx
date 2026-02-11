@@ -3,50 +3,43 @@ import "./products.css";
 import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
+import { useState } from "react";
+
+
 
 function Products() {
+  const [counts, setCounts] = useState([0,0,0]);
+
   const products = [
-    {
-      name: "Sneakers Off-White",
-      year: 2024,
-      brand: "NIKE",
-      price: "$38.00",
-      image: img1,
-    },
-    {
-      name: "Sneakers Off-White",
-      year: 2024,
-      brand: "NIKE",
-      price: "$38.00",
-      image: img2,
-    },
-    {
-      name: "Sneakers Off-White",
-      year: 2024,
-      brand: "NIKE",
-      price: "$38.00",
-      image: img3,
-    },
+    { img: img1, name: "Sneakers Off-White", year: 2024 },
+    { img: img2, name: "Sneakers Off-White", year: 2024 },
+    { img: img3, name: "Sneakers Off-White", year: 2024 },
   ];
 
-  return (
+  const increaseCount = (index) => {
+    const newCounts = [...counts];
+    newCounts[index] =0
     <div className="container">
-      {products.map((card, index) => (
-        <div className="card" key={index}>
-          <img src={card.image} alt={card.name} className="product-image" />
-
-          <div>
-            <h2 className="product-name">{card.name}</h2>
-            <button className="button">+</button>
+      {products.map((item, index) => (
+        <div className="cards" key={index}>
+          <img src={item.img} alt="shoe" />
+          <div className="description">
+            <div className="wrap">
+              <h3>{item.name}</h3>
+              <h3 className="year">{item.year}</h3>
+            </div>
+            <button onClick={() => increaseCount(index)}>+</button>
           </div>
-
-          <p className="product-year">{card.year}</p>
-          <p className="product-brand">{card.brand}</p>
-          <p className="product-price">{card.price}</p>
+          <p className="brand">NIKE</p>
+          <div className="price_count">
+            <p className="price">$38.00</p>
+            <p className="count">count:&nbsp;{counts[index]}</p>
+          </div>
         </div>
       ))}
     </div>
   );
 }
+
 
 export default Products;
