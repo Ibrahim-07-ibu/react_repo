@@ -8,7 +8,7 @@ import { useState } from "react";
 
 
 function Products() {
-  const [counts, setCounts] = useState([0,0,0]);
+  const [counts, setcounts] = useState([0,0,0]);
 
   const products = [
     { img: img1, name: "Sneakers Off-White", year: 2024 },
@@ -18,7 +18,8 @@ function Products() {
 
   const increaseCount = (index) => {
     const newCounts = [...counts];
-    newCounts[index] =0
+    newCounts[index] =0}
+
     <div className="container">
       {products.map((item, index) => (
         <div className="cards" key={index}>
@@ -38,7 +39,7 @@ function Products() {
         </div>
       ))}
     </div>
-  );
+
 }
 
 
