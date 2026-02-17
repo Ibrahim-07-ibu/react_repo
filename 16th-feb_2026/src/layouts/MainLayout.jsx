@@ -8,7 +8,8 @@ function MainLayout() {
         <ul>
           <li><Link to="/html">HTML</Link></li>
           <li><Link to="/css">CSS</Link></li>
-          <li><Link to="/javascript">JS</Link></li>       
+          <li><Link to="/javascript">JS</Link></li> 
+          <li><Link to="/contact">Contact Us</Link></li>      
         </ul>
       </header>
       {/* outlet */}
