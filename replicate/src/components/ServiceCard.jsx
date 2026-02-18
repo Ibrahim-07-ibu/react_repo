@@ -1,5 +1,3 @@
-// import "./ServiceCard.css";
-
 function ServiceCard({ title, price }) {
   return (
     <div className="card">
